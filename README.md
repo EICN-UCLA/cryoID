@@ -1,15 +1,47 @@
 ## cryoID
 
-cryoID (cryoEM map identification) is a python-based program that determines the unique identity of the protein(s) in (near-) atomic resolution cryoEM density maps from a pool of candidates. It takes cryoID two sequencial steps to get the job done, with two subprograms called get_queries and search_pool respectively. More technical details are given in a our paper.
+cryoID is a python-based program that determines the unique identity of the protein(s) in unknown near-atomic resolution cryoEM density maps from a pool of candidate protein sequences. It takes cryoID two sequencial steps to get the job done, with two subprograms called get_queries and search_pool respectively. More technical details are given in our [Nature Methods paper](https://www.nature.com/nmeth/). If you find cryoID useful, please cite this paper.
 
-cryoID was designed by Xiaorun Li, Chi-Min Ho and Mason Lai from Prof. Hong Zhou lab at UCLA, and built by Xiaorun. We thank Tom Terwilliger for the development of new phenix tools used in subprogram get_queries.
+cryoID was designed by Xiaorun Li (Lee), Chi-Min Ho and Mason Lai from Prof. Hong Zhou lab at UCLA, and developed by Xiaorun. We thank Tom Terwilliger for the development of new phenix tools used in cryoID subprogram get_queries.
 
 cryoID is an open-source software under the MIT license.
 
 
-## Installation & usage
+## Installation
 
-Please refer to the cryoID tutorial for instructrions on installation and usage.
+cryoID executables and source codes (python 2.7) are both provided here. Current version was developed for Linux-based systems (CentOS 6 & 7, etc.). To install the program, download cryoID from github:
+```
+git clone www.github/EICN-UCLA/cryoID.git
+```
+Make sure you have the privilege to run cryoID executables. If not, change the files' property.
+```
+cd /your/directory/to/cryoID/bin
+chmod +x *
+```
 
+cryoID generates query sequences from cryoEM density maps by calling sequence_from_map, a new tool in PHENIX (version >= 1.14-3260). If you don't have it, download [PHENIX](https://www.phenix-online.org/) and install one.
+```
+tar -zxvf phenix-installer-version.tar.gz
+cd ./phenix-installer-version
+./install --prefix=/your/directory/to/phenix
+```
 
+cryoID relies on COOT to open the query model for users' inspection. Most versions will do. If you do not have COOT installed, download it [HERE](https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/). 
+```
+tar -zxvf coot-version.tar.gz
+```
+
+(Blastp and makeblastdb from BLAST are used for query searching in cryoID and have been incorperated into our program under cryoID/bin directory. In rare cases if they don't work on your system, you can install your own version from ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/.)
+
+In the end, set up your environment for running cryoID. For example, we add the following lines to .bashr file for our bash shell.
+```
+# .bashrc
+export PATH=/your/directory/to/cryoID/bin:/your/directory/to/coot/bin:$PATH
+source /path/to/phenix/phenix_env.sh
+```
+Now you should be able to run cryoID.
+
+## Usage
+
+Please refer to the tutorial for instructions on cryoID usage.
 
