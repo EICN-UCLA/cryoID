@@ -31,7 +31,7 @@ cryoID relies on COOT to open the query model for users' inspection. Most versio
 tar -zxvf coot-version.tar.gz
 ```
 
-(Blastp and makeblastdb from BLAST are used for query searching in cryoID and have been incorperated into our program under cryoID/bin directory. In rare cases if they don't work on your system, you can install your own version from ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/.)
+Blastp and makeblastdb from BLAST are used for query searching in cryoID and have been incorperated into our program under cryoID/bin directory. In rare cases if they don't work on your system, you can install your own version from [HERE](https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/).
 
 In the end, set up your environment for running cryoID. For example, we add the following lines to .bashr file for our bash shell.
 ```
