@@ -1,6 +1,6 @@
 ## cryoID
 
-cryoID is a python-based program that determines the unique identity of the protein(s) in unknown near-atomic resolution cryoEM density maps from a pool of candidate protein sequences. It takes cryoID two sequencial steps to get the job done, with two subprograms called get_queries and search_pool respectively. More technical details are given in our [Nature Methods paper](https://www.nature.com/nmeth/). If you find cryoID useful, please cite this paper.
+cryoID is a python-based program that determines the unique identity of the protein(s) in unknown near-atomic resolution cryoEM density maps from a pool of candidate protein sequences. It takes cryoID two sequencial steps to get the job done, with two subprograms called get_queries and search_pool respectively. More technical details are given in our [Nature Methods paper](https://www.nature.com/articles/s41592-019-0637-y). If you find cryoID useful, please cite this paper.
 
 cryoID was designed by Xiaorun Li (Lee), Chi-Min Ho and Mason Lai from Prof. Hong Zhou lab at UCLA, and developed by Xiaorun. We thank Tom Terwilliger for the development of new phenix tools used in cryoID subprogram get_queries.
 
