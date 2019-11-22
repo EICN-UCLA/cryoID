@@ -11,7 +11,7 @@ cryoID is an open-source software under the MIT license.
 
 cryoID executables and source codes (python 2.7) are both provided here. Current version was developed for Linux-based systems (CentOS 6 & 7, etc.). To install the program, download cryoID from github:
 ```
-git clone www.github/EICN-UCLA/cryoID.git
+git clone https://github.com/EICN-UCLA/cryoID.git
 ```
 Make sure you have the privilege to run cryoID executables. If not, change the files' property.
 ```
