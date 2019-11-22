@@ -47,5 +47,5 @@ If you want to work on the source codes (python 2.7), [Anaconda](https://www.ana
 
 ## Usage
 
-Please refer to the [tutorial](https://github.com/EICN-UCLA/cryoID/) for instructions on cryoID usage. The test data can be download [HERE](https://github.com/EICN-UCLA/).
+Please refer to the [tutorial](https://github.com/EICN-UCLA/cryoID/) for instructions on cryoID usage. The test data can be download [HERE](https://github.com/EICN-UCLA/cryoID_SM/).
 
