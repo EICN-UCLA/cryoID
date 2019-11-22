@@ -26,22 +26,26 @@ cd ./phenix-installer-version
 ./install --prefix=/your/directory/to/phenix
 ```
 
-cryoID relies on COOT to open the query model for users' inspection. Most versions will do. If you do not have COOT installed, download it [HERE](https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/). 
+cryoID relies on COOT to open the query model for users' inspection. Most versions will do. If you do not have COOT installed, download it [HERE](https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/binaries/release/). 
 ```
 tar -zxvf coot-version.tar.gz
 ```
 
-Blastp and makeblastdb from BLAST are used for query searching in cryoID and have been incorperated into our program under cryoID/bin directory. In rare cases if they don't work on your system, you can install your own version from [HERE](https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/).
+Blastp and makeblastdb from BLAST are used for query searching in cryoID and have been incorperated into our program under cryoID/bin directory. In rare cases if they don't work on your system, you can install your own version [HERE](https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/).
 
-In the end, set up your environment for running cryoID. For example, we add the following lines to .bashr file for our bash shell.
+The last step is to set up your environment for running cryoID. For example, we add the following lines to .bashr file for our bash shell.
 ```
 # .bashrc
 export PATH=/your/directory/to/cryoID/bin:/your/directory/to/coot/bin:$PATH
 source /path/to/phenix/phenix_env.sh
 ```
+
 Now you should be able to run cryoID.
+
+If you want to work on the source codes (python 2.7), [Anaconda](https://www.anaconda.com/distribution/) is recommended.
+
 
 ## Usage
 
-Please refer to the tutorial for instructions on cryoID usage.
+Please refer to the [tutorial](https://github.com/EICN-UCLA/cryoID/) for instructions on cryoID usage. The test data can be download [HERE](https://github.com/EICN-UCLA/).
 
