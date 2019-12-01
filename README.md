@@ -19,7 +19,7 @@ cd /your/directory/to/cryoID/bin
 chmod +x *
 ```
 
-cryoID generates query sequences from cryoEM density maps by calling sequence_from_map, a new tool in PHENIX (version >= 1.14-3260). If you don't have it, download [PHENIX](https://www.phenix-online.org/) and install one.
+cryoID generates query sequences from cryoEM density maps by calling sequence_from_map, a new tool in PHENIX (version >= 1.14-3260. The version used in cryoID tutorial was 1.17.1-3660). If you don't have it, download [PHENIX](https://www.phenix-online.org/) and install one.
 ```
 tar -zxvf phenix-installer-version.tar.gz
 cd ./phenix-installer-version
